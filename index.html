@@ -90,7 +90,7 @@
 
     h7 {
       color: #ffffff;
-      font-size: 24px;
+      font-size: 32px;
       font-family: Arial, Helvetica, sans-serif;
       font-stretch: 50%;
       line-height: 150%;
@@ -100,7 +100,7 @@
 
     h8 {
       color: #ffffff;
-      font-size: 36px;
+      font-size: 44px;
       font-family: 'Goldman', sans-serif;
       /* font-weight:lighter; */
       font-stretch: 100%;
@@ -110,7 +110,7 @@
 
     h9 {
       color: #ffffff;
-      font-size: 36px;
+      font-size: 44px;
       font-family: 'Rakkas', serif;
       /* font-weight:lighter; */
       font-stretch: 100%;
@@ -389,7 +389,7 @@
       var distanceToCenter = ((rect.top + rect.bottom) / 2) - headerHeight;
       var viewportHeight = window.innerHeight;
 
-  
+
 
       var ratioFromCenter = distanceToCenter / (viewportHeight / 2);
 
@@ -399,21 +399,21 @@
       //scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
       //return rect.top + scrollTop;
-  }
+    }
 
 
 
-    window.onload = function() {            
-     function setVideoOpacities() {
-         var ss = getRatioFromCenter("speed_stars_content");
-         var ot = getRatioFromCenter("orbis_terrarum_content");
-        
-         const threshhold = .5;
-         document.getElementById("speed_stars_video").style.opacity = Math.pow(1 - invlerp(0, threshhold, Math.abs(1 - ss)), .7) * 2;
-         document.getElementById("orbis_terrarum_video").style.opacity = Math.pow(1 - invlerp(0, threshhold, Math.abs(1 - ot)), .7) * 2;
-     }
-     setInterval(setVideoOpacities, 100);
- }
+    window.onload = function () {
+      function setVideoOpacities() {
+        var ss = getRatioFromCenter("speed_stars_content");
+        var ot = getRatioFromCenter("orbis_terrarum_content");
+
+        const threshhold = .5;
+        document.getElementById("speed_stars_video").style.opacity = Math.pow(1 - invlerp(0, threshhold, Math.abs(1 - ss)), .7) * 2;
+        document.getElementById("orbis_terrarum_video").style.opacity = Math.pow(1 - invlerp(0, threshhold, Math.abs(1 - ot)), .7) * 2;
+      }
+      setInterval(setVideoOpacities, 100);
+    }
   </script>
 
   <div class="sticky-header" id="header">
@@ -424,11 +424,11 @@
         <div class="col col-xs-12 col-header">
           <div class="about">
             <h1 style="font-weight: 400; font-size: 28px; margin-bottom: 6px;">Luke Doukakis</h1>
-            <a href="mailto:lukedoukakis97@gmail.com" class="email" style = "font-size: 14px;"><span class="glyphicon glyphicon-envelope"
-                aria-hidden="true"></span>lukedoukakis97@gmail.com</a>
+            <a href="mailto:lukedoukakis97@gmail.com" class="email" style="font-size: 14px;"><span
+                class="glyphicon glyphicon-envelope" aria-hidden="true"></span>lukedoukakis97@gmail.com</a>
             <br>
-            <a href="https://github.com/lukedoukakis" class="email" style = "font-size: 14px;"><span class="glyphicon glyphicon-envelope"
-                aria-hidden="true"></span>github.com/lukedoukakis
+            <a href="https://github.com/lukedoukakis" class="email" style="font-size: 14px;"><span
+                class="glyphicon glyphicon-envelope" aria-hidden="true"></span>github.com/lukedoukakis
             </a>
             <!-- <div class="socialLinks">
               <a href="https://www.linkedin.com/in/lukedoukakis/" target="_blank">
@@ -484,60 +484,72 @@
 
   <div class="content" id="projects" style="display: none; justify-content: center;">
 
-    <div id="speed_stars_video" style = "background-color: #ffffff;">
+    <div id="speed_stars_video" style="background-color: #ffffff;">
       <video autoplay muted loop playsinline style="pointer-events: none; z-index: -1; position: fixed;
             right: 0;
             bottom: 0;
             min-width: 100%;
             min-height: 100%;
-            opacity: .5;
+            opacity: .3;
             background-color: #ffffff;">
         <source src="speedstars.mp4" type="video/mp4">
       </video>
     </div>
-    <div id="orbis_terrarum_video" style = "background-color: #ffffff;">
+    <div id="orbis_terrarum_video" style="background-color: #ffffff;">
       <video autoplay muted loop playsinline style="pointer-events: none; z-index: -1; position: fixed;
             right: 0;
             bottom: 0;
             min-width: 100%;
             min-height: 100%;
-            opacity: .5;
+            opacity: .3;
             background-color: #ffffff;">
-            
+
         <source src="orbisterrarum.mp4" type="video/mp4">
       </video>
     </div>
 
-    <div style="justify-content: center; width: 800px; z-index: 1; background-color: rgba(0,0,0,0); padding-left: 50px; padding-right: 50px; padding-bottom: 200px; margin-left: 0px; margin-right: 0px;">
-      <div class="row repo" id="speed_stars_content" style="margin-top:75px; display: flex; justify-content: center; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
+    <div
+      style="justify-content: center; width: 800px; z-index: 1; background-color: rgba(0,0,0,0); padding-left: 50px; padding-right: 50px; padding-bottom: 200px; margin-left: 0px; margin-right: 0px;">
+      <div class="row repo" id="speed_stars_content"
+        style="margin-top:75px; display: flex; justify-content: center; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
         <div class="col-lg-6 about-repo" style="display: flex; justify-content: center;">
           <h8 style="margin-bottom: 25px;">Speed Stars</h8>
           <h7>A free-to-play mobile track and field game available on the iOS App Store and
             Google Play.
           </h7>
-          <div class="row repo" id="speed_stars_content" style="display: flex; justify-content: left; text-align: left; margin: 0px;">
-            <p style = "margin: 0px;"> <i style="font-size:32px; color:#ffffff; padding-right: 10px;" class="fa">&#xf179;</i><a href="https://apps.apple.com/us/app/speed-stars/id1573039936" class="link">iOS</a></p>
+          <div class="row repo" id="speed_stars_content"
+            style="display: flex; justify-content: left; text-align: left; margin: 0px;">
+            <p style="margin: 0px;"> <i style="font-size:32px; color:#ffffff; padding-right: 10px;"
+                class="fa">&#xf179;</i><a href="https://apps.apple.com/us/app/speed-stars/id1573039936"
+                class="link">iOS</a></p>
           </div>
-          <div class="row repo" id="speed_stars_content" style="display: flex; justify-content: left; text-align: left; margin: 0px;">
-            <p style = "margin: 0px;"> <i style="font-size:32px; color:#ffffff; padding-right: 10px;" class='fab'>&#xf3ab;</i><a href="https://apps.apple.com/us/app/speed-stars/id1573039936" class="link">Google Play</a></p>
+          <div class="row repo" id="speed_stars_content"
+            style="display: flex; justify-content: left; text-align: left; margin: 0px;">
+            <p style="margin: 0px;"> <i style="font-size:32px; color:#ffffff; padding-right: 10px;"
+                class='fab'>&#xf3ab;</i><a href="https://apps.apple.com/us/app/speed-stars/id1573039936"
+                class="link">Google Play</a></p>
           </div>
-          
+
         </div>
 
         <div class="col-lg-6">
           <img src="https://i.imgur.com/LAH38pf.png" alt="" class="img-fluid center-block">
         </div>
 
-        <h7 style="margin-top: 30px;">
-          Epitomizing the concept of easy-to-learn and hard-to-master, Speed Stars engages through enjoyment of gameplay,
-          learning, and feeling of progression.
-          Colorful aesthetics and simple straight-forward controls invite you in. Intricate gameplay mechanics, a high skill
-          ceiling and
-          fostering competitiveness through asynchronous multiplayer and leaderboards keep you feeling challenged to
-          want more!
-        </h7>
+        <div class="row repo" style="margin:0px; display: flex; justify-content: center;">
+          <h7 style="margin-top: 30px;">
+            Epitomizing the concept of easy-to-learn and hard-to-master, Speed Stars engages through enjoyment of
+            gameplay,
+            learning, and feeling of progression.
+            Colorful aesthetics and simple straight-forward controls invite you in. Intricate gameplay mechanics, a high
+            skill
+            ceiling and
+            fostering competitiveness through asynchronous multiplayer and leaderboards keep you feeling challenged to
+            want more!
+          </h7>
+        </div>
 
-        
+
         <!-- <p><a href="https://store.steampowered.com/app/1482700/Speed_Stars/" class="link">Steam link</a></p> -->
 
         <!-- <div class="tech-items">
@@ -547,7 +559,8 @@
       </div>
 
 
-      <div class="row repo" id="orbis_terrarum_content" style="display: flex; justify-content: center; margin-bottom: 50px">
+      <div class="row repo" id="orbis_terrarum_content"
+        style="display: flex; justify-content: center; margin-bottom: 50px">
         <div class="col-lg-6 about-repo" style="display: flex; justify-content: center;">
           <h9 style="margin-bottom: 25px;">Orbis Terrarum</h9>
           <h7>A procedurally generated low-poly world I created with Unity, that combines several noise maps and uses
@@ -556,8 +569,8 @@
             as well as to learn more advanced graphical techniques.</h7>
           <p style="margin-bottom: 0px;"><a href="https://www.youtube.com/watch?v=K0nGPhG4Lio" class="link">Video</a>
           </p>
-          <p><a href="https://github.com/lukedoukakis/orbis-terrarum/tree/main/Humans/Assets/Scripts"
-              class="link" style="margin-top: 20px;">Code</a></p>
+          <p><a href="https://github.com/lukedoukakis/orbis-terrarum/tree/main/Humans/Assets/Scripts" class="link"
+              style="margin-top: 20px;">Code</a></p>
 
           <!-- <div class="tech-items">
             <i class="devicon-csharp-plain-wordmark colored animated"></i>
