@@ -1,91 +1,144 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Luke Doukakiss | Portfolio</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Luke Doukakis</title>
 
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/98f1672b4f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- Google Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,400" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/98f1672b4f.js" crossorigin="anonymous"></script>
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+  <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,400" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- Leave those next 4 lines if you care about users using IE8 -->
-    <!--[if lt IE 9]>
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Rakkas&display=swap" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- Leave those next 4 lines if you care about users using IE8 -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <style>
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-weight: 300;
+      font-family: 'Open Sans', sans-serif;
+    }
 
-      h1, h2, h3, h4, h5{
-        font-weight: 300;
-        font-family: 'Open Sans', sans-serif;
-      }
+    p {
+      font-weight: 300;
+      font-family: 'Open Sans', sans-serif;
+    }
 
-      p {
-        font-weight: 300;
-        font-family: 'Open Sans', sans-serif;
-      }
+    hr {
+      max-width: 300px;
+      width: 80%;
+      margin-left: 0;
+    }
 
-      hr {
-        max-width: 300px;
-        width: 80%;
-        margin-left: 0;
-      }
+    /* Begin dark mode specific styles */
+    body {
+      /* background-color: #38444b; */
+      background-color: #000000;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
 
-      /* Begin dark mode specific styles */ 
-      body {
-        /* background-color: #38444b; */
-        background-color: #2b404d;
-        background-image: url('https://i.imgur.com/DzRrZER.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-      }
+    hr {
+      /* border-color: #565656; */
+      border-color: #000000;
+    }
 
-      hr {
-        /* border-color: #565656; */
-        border-color: #565656;
-      }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      color: rgb(123, 123, 123)
+    }
 
-      h1, h2, h3, h4, h5, p {
-        color: rgb(237, 237, 237)
-      }
+    h6 {
+      color: #ffffff;
+      font-size: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-stretch: 50%;
+      line-height: 200%;
+      text-align: left;
+    }
 
-      a {
-        color: rgb(208, 208, 208);
-      }
+    h7 {
+      color: #ffffff;
+      font-size: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-stretch: 50%;
+      line-height: 150%;
+      text-align: left;
+    }
 
-      a:hover,
-      a:focus,
-      a:active {
-        color:white;
-      }
+    h8 {
+      color: #ffffff;
+      font-size: 36px;
+      font-family: 'Goldman', sans-serif;
+      /* font-weight:lighter; */
+      font-stretch: 100%;
+      line-height: 100%;
+      text-align: left;
+    }
 
-      .tech-items i {
-        opacity: 1;
-        color:white !important;
-      }
+    h9 {
+      color: #ffffff;
+      font-size: 36px;
+      font-family: 'Rakkas', serif;
+      /* font-weight:lighter; */
+      font-stretch: 100%;
+      line-height: 100%;
+      text-align: left;
+    }
 
-      .tech-items i:hover {
-        color: initial;
-      }
-      /* END dark mode specific styles */
-      
-      /* Begin light mode specific styles */
-      /* h1, h2, h3, h4, h5{
+
+    a {
+      color: rgb(123, 123, 123)
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      color: white;
+    }
+
+    .tech-items i {
+      opacity: 1;
+      color: white !important;
+    }
+
+    .tech-items i:hover {
+      color: initial;
+    }
+
+    /* END dark mode specific styles */
+
+    /* Begin light mode specific styles */
+    /* h1, h2, h3, h4, h5{
         color: #3a3a3a;
         font-weight: 300;
         font-family: 'Open Sans', sans-serif;
@@ -102,309 +155,417 @@
       .socialLinks a {
         color: #c3c3c3;
       } */
-      /* END light mode specific styles */
+    /* END light mode specific styles */
 
-      h2 {
-        font-weight: 100;
-      }
+    h2 {
+      font-weight: 100;
+    }
 
-      a {
-        font-weight: bold;
-      }
+    a {
+      font-weight: bold;
+    }
 
-      .container {
-        /* max-width:960px; */
-      }
+    .sticky-header {
+      position: -webkit-sticky;
+      /* Safari */
+      position: sticky;
+      top: 0;
+      background-color: #ffffff;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+    }
 
-      .animated {
-        transition: 150ms ease-out;
-      }
+    .container {
+      /* max-width:960px; */
+    }
 
-      .muted {
-        opacity: 0.7;
-      }
 
-      .section-heading {
-        text-transform: uppercase;
-        font-size: 1.4em;
-      }
+    .content {
+      display: flex;
+      justify-content: center;
+    }
 
-      .row-header {
-        margin-top:30vh;
-        margin-bottom: 20vh;
-        display: flex;
-        align-items: center;
-      }
+    .animated {
+      transition: 150ms ease-out;
+    }
 
-      .col-header {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width:100%;
-      }
+    .muted {
+      opacity: 0.7;
+    }
 
-      .about {
-        margin-top: 27px;
-      }
+    .section-heading {
+      text-transform: uppercase;
+      font-size: 1.4em;
+    }
 
-      .about .location {
-        font-size:12px
-      }
+    .row-header {
+      /* margin-top:30vh;
+        margin-bottom: 20vh; */
+      margin-right: 10vw;
+      margin-left: 10vh;
+      display: flex;
+      align-items: center;
+    }
 
-      .about .socialLinks i {
-        font-size:20px;
-        margin:0 2px;
-      }
+    .row-header-element {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
 
-      .about .twitter:hover {
-        color: #1DA1F2;
-      }
+    .header-button {
+      /* display: flex;
+        flex-direction: row;*/
+      /* background-color: #59b8f3; */
+      margin-left: 20px;
+      margin-right: 20px;
+      border: none;
+      background: none;
+      font-weight: 400;
+      font-size: 42px;
 
-      .about .linkedin:hover {
-        color: #2867B2
-      }
+    }
 
-      .profile-pic {
-        border-style: solid;
-        border-radius:50%;
-        border-color: rgb(237, 237, 237);
-        width:40%;
-        max-width: 275px;
-      }
+    .col-header {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
 
-      .project-img-col img {
-        max-width: 250px;
-        margin: auto;
-      }
+    .about {
+      margin-top: 27px;
+    }
 
-      .list-container {
-        max-width: 600px;
-        margin: auto;
-      }
+    .about .location {
+      font-size: 12px
+    }
 
-      .tech-items i {
-        font-size: 2em;
-        opacity: 0.5;
-        border-radius: 5px;
-        padding: 5px;
-      }
+    .about .socialLinks i {
+      font-size: 20px;
+      margin: 0 2px;
+    }
 
-      .tech-items i:hover {
-        opacity: 1;
-      }
+    .about .twitter:hover {
+      color: #1DA1F2;
+    }
 
-      .tech-tool-item {
-        margin-left:15px;
-        display: inline-block;
-      }
+    .about .linkedin:hover {
+      color: #2867B2
+    }
 
-      .row-footer {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        font-size: 12px;
-      }
+    .profile-pic {
+      border-style: solid;
+      border-radius: 50%;
+      border-color: rgb(237, 237, 237);
+      width: 100%;
+      max-width: 275px;
+    }
 
-      .row-footer p {
-        margin: 0;
-      }
+    .project-img-col img {
+      max-width: 250px;
+      margin: auto;
+    }
 
-      .row-footer .socialLinks {
-        margin-top: 8px;
+    .list-container {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .tech-items i {
+      font-size: 2em;
+      opacity: 0.5;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    .tech-items i:hover {
+      opacity: 1;
+    }
+
+    .tech-tool-item {
+      margin-left: 15px;
+      display: inline-block;
+    }
+
+    .row-footer {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-size: 12px;
+    }
+
+    .row-footer p {
+      margin: 0;
+    }
+
+    .row-footer .socialLinks {
+      margin-top: 8px;
+    }
+
+    .about-repo {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    @media (max-width: 991px) {
+      .row.repo {
+        flex-direction: column-reverse;
       }
 
       .about-repo {
-        display: flex;
-        justify-content: center;  
-        flex-direction: column;
+        margin-top: 25px;
+      }
+    }
+
+    /* Handle desktop */
+    @media (min-width: 768px) {
+      .row-header .image {
+        text-align: right;
+        padding-right: 5vw;
       }
 
-      @media (max-width: 991px) {
-        .row.repo {
-          flex-direction: column-reverse;
-        }
-
-        .about-repo {
-          margin-top: 25px;
-        }
+      .row-header .about {
+        text-align: left;
+        margin-top: 0
       }
 
-      /* Handle desktop */
-      @media (min-width: 768px) {  
-        .row-header .image {
-          text-align: right;
-          padding-right: 5vw;
-        }
-
-        .row-header .about {
-          text-align:left;
-          margin-top:0
-        }
-
-        .col-header {
-          flex-direction: row;
-        }
-
-        .profile-pic {
-          margin-right: 5%;
-        }
+      .col-header {
+        flex-direction: row;
       }
 
-
-      /* Handle dark mode */
-      @media (prefers-color-scheme: dark) {
-
+      .profile-pic {
+        margin-right: 5%;
       }
+    }
 
-    </style>
-  </head>
-  <body>
 
-  <div class="container">
+    /* Handle dark mode */
+    @media (prefers-color-scheme: dark) {}
+  </style>
+</head>
+
+<body>
+
+  <script>
+
+    const clamp = (a, min = 0, max = 1) => Math.min(max, Math.max(min, a));
+    const invlerp = (x, y, a) => clamp((a - x) / (y - x));
+
+
+    function switchElement_header(elementId) {
+      const elements = ["about", "work"];
+      elements.forEach((item, index) => {
+        var x = document.getElementById(item);
+        if (item == elementId) {
+          x.style.display = "flex";
+        }
+        else {
+          x.style.display = "none";
+        }
+      });
+    }
+
+
+    function getRatioFromCenter(elementId) {
+
+
+      var headerRect = document.getElementById("header").getBoundingClientRect();
+      var headerHeight = headerRect.bottom - headerRect.top;
+      headerHeight = 0;
+
+      var element = document.getElementById(elementId);
+      var rect = element.getBoundingClientRect()
+      var distanceToCenter = ((rect.top + rect.bottom) / 2) - headerHeight;
+      var viewportHeight = window.innerHeight;
+
+  
+
+      var ratioFromCenter = distanceToCenter / (viewportHeight / 2);
+
+      return ratioFromCenter;
+
+      //var rect = element.getBoundingClientRect(),
+      //scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      //return rect.top + scrollTop;
+  }
+
+
+
+    window.onload = function() {            
+     function setVideoOpacities() {
+         var ss = getRatioFromCenter("speed_stars_content");
+         var ot = getRatioFromCenter("orbis_terrarum_content");
+        
+         const threshhold = .5;
+         document.getElementById("speed_stars_video").style.opacity = Math.pow(1 - invlerp(0, threshhold, Math.abs(1 - ss)), .7) * 2;
+         document.getElementById("orbis_terrarum_video").style.opacity = Math.pow(1 - invlerp(0, threshhold, Math.abs(1 - ot)), .7) * 2;
+     }
+     setInterval(setVideoOpacities, 100);
+ }
+  </script>
+
+  <div class="sticky-header" id="header">
 
     <!-- Intro, name, description -->
-    <div class="row text-center row-header">
-      <div class="col col-xs-12 col-header">
-          <img src="https://i.imgur.com/m954Gd4.jpg" alt="profile pic" class="img-fluid profile-pic center-block">
-        <div class="about">
-          <h1 style="font-weight: 400; font-size: 42px; margin-bottom: 10px;">Luke Doukakis</h1>
-          <h2 style="font-size: 32px; margin-bottom: 0px;">Computer Science graduate from Cal Poly Pomona.</h2>
-          <h2 style="font-size: 32px; margin-bottom: 30px;">Software and game developer.</h2>
-          <a href="mailto:lukedoukakis97@gmail.com" class="email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>lukedoukakis97@gmail.com</a>
-          <br>
-          <a href="https://github.com/lukedoukakis" class="email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>github.com/lukedoukakis</a>
-          <p style="margin-top:15px">
-            <i class="fas fa-map-marker-alt"></i> 
-            <span class="location">Santa Clarita, California</span>
-          </p>
-          <div class="socialLinks">
+    <div class="row text-center row-header" style="display: flex; justify-content: center;">
+      <div class="row row-header-element">
+        <div class="col col-xs-12 col-header">
+          <div class="about">
+            <h1 style="font-weight: 400; font-size: 28px; margin-bottom: 6px;">Luke Doukakis</h1>
+            <a href="mailto:lukedoukakis97@gmail.com" class="email" style = "font-size: 14px;"><span class="glyphicon glyphicon-envelope"
+                aria-hidden="true"></span>lukedoukakis97@gmail.com</a>
+            <br>
+            <a href="https://github.com/lukedoukakis" class="email" style = "font-size: 14px;"><span class="glyphicon glyphicon-envelope"
+                aria-hidden="true"></span>github.com/lukedoukakis
+            </a>
+            <!-- <div class="socialLinks">
               <a href="https://www.linkedin.com/in/lukedoukakis/" target="_blank">
                 <i class="fab fa-linkedin linkedin animated"></i>
+                <a href="https://www.linkedin.com/in/lukedoukakis/" class="email"><span class="glyphicon glyphicon-envelope"
+                  aria-hidden="false"></span>linkedin.com/in/lukedoukakis/</a>
               </a>
+            </div> -->
+            <p style="margin-top:15px">
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="location">Santa Monica, California</span>
+            </p>
           </div>
         </div>
       </div>
+      <div style="display: table-row; height: 50px; padding-left: 100px; padding-right: 100px">
+        <button class="header-button" ; onclick="switchElement_header('about')">
+          <div>
+            <h2>About</h2>
+          </div>
+        </button>
+        <button class="header-button" ; onclick="switchElement_header('work')">
+          <div>
+            <h2>Work</h2>
+          </div>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container"></div>
+  <!-- Projects -->
+
+
+
+  <div class="content" id="about" style="display: flex;">
+    <div class="row text-center row-header" style="display: flex; justify-content: center; width: 400px; padding-left: 20px; padding-right: 20px; padding-top: 40px; padding-bottom: 40px;">
+      <img
+        src="https://media.licdn.com/dms/image/D5603AQGfPOMtULkG0w/profile-displayphoto-shrink_200_200/0/1704409752490?e=1712188800&v=beta&t=Kj6zrCXbgivz6AUv7yfcTrvpLlbfnBJbDqwVCn7HQ6k"
+        alt="profile pic" class="img-fluid profile-pic center-block">
+      <h6 style="margin-top: 30px;">
+        Luke Doukakis is a game developer with a diverse set of skills primarily focused in engineering and graphics
+        programming.
+        Well versed in Unity, Luke has well-practiced experience with C# scripting, shader authoring with HLSL and
+        Universal Render Pipeline, and UI development.<br><br>
+        He is also equipped with skills in 3D modeling and animation using Blender and Unity's Mecanim animation system.
+      </h6>
+    </div>
+  </div>
+
+
+  <div class="content" id="work" style="display: none; justify-content: center;">
+
+    <div id="speed_stars_video" style = "background-color: #ffffff;">
+      <video autoplay muted loop playsinline style="pointer-events: none; z-index: -1; position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            opacity: .5;
+            background-color: #ffffff;">
+        <source src="speedstars.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div id="orbis_terrarum_video" style = "background-color: #ffffff;">
+      <video autoplay muted loop playsinline style="pointer-events: none; z-index: -1; position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            opacity: .5;
+            background-color: #ffffff;">
+            
+        <source src="orbisterrarum.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div style="justify-content: center; width: 800px; z-index: 1; background-color: rgba(0,0,0,0); padding-left: 50px; padding-right: 50px; padding-bottom: 200px;">
+      <div class="row repo" id="speed_stars_content" style="margin-top:75px; display: flex; justify-content: center; margin-bottom: 50px;">
+        <div class="col-lg-6 about-repo" style="display: flex; justify-content: center;">
+          <h8 style="margin-bottom: 25px;">Speed Stars</h8>
+          <h7>A free-to-play mobile track and field game available on the iOS App Store and
+            Google Play.
+          </h7>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="https://i.imgur.com/LAH38pf.png" alt="" class="img-fluid center-block">
+        </div>
+
+        <h7 style = "margin-top: 30px;">
+          The game aims to engage players through sheer enjoyment of gameplay and feeling of progression,
+          epitomizing easy-to-learn and hard-to-master.
+          The simple aesthetic and straight-forward controls invite you in - intricate gameplay mechanics and
+          competition through asynchronous multiplayer keep you feeling challenged to
+          improve and want more!
+        </h7>
+
+        <p style="margin-bottom: 0px;"><a href="https://apps.apple.com/us/app/speed-stars/id1573039936" class="link">App
+            store link</a></p>
+        <!-- <p><a href="https://store.steampowered.com/app/1482700/Speed_Stars/" class="link">Steam link</a></p> -->
+
+        <!-- <div class="tech-items">
+          <i class="devicon-csharp-plain-wordmark colored animated"></i>
+        </div> -->
+
+      </div>
+
+
+      <div class="row repo" id="orbis_terrarum_content" style="display: flex; justify-content: center; margin-bottom: 50px">
+        <div class="col-lg-6 about-repo" style="display: flex; justify-content: center;">
+          <h9 style="margin-bottom: 25px;">Orbis Terrarum</h9>
+          <h7>A procedurally generated low-poly world I created with Unity, that combines several noise maps and uses
+            custom shaders to create rolling landscapes and biomes. I took on this side project as a programming
+            challenge
+            as well as to learn more advanced graphical techniques.</h7>
+          <p style="margin-bottom: 0px;"><a href="https://www.youtube.com/watch?v=K0nGPhG4Lio" class="link">Video</a>
+          </p>
+          <p><a href="https://github.com/lukedoukakis/orbis-terrarum/tree/main/Humans/Assets/Scripts"
+              class="link">Code</a></p>
+
+          <!-- <div class="tech-items">
+            <i class="devicon-csharp-plain-wordmark colored animated"></i>
+          </div> -->
+        </div>
+
+        <div class="col-lg-6">
+          <img src="https://i.imgur.com/7R63vTt.png" alt="" class="img-fluid center-block">
+        </div>
+
+      </div>
+
     </div>
 
 
-    <!-- Projects -->
-    <section style="margin-top:0">
-
-      <div class="row">
-        <div class="col xs-12">
-          <h3 class="section-heading muted">Work</h3>
-          <hr>
-        </div>
-      </div>
 
 
-      <div class="row repo" style="margin-bottom:120px">
-          
-        <div class="col-lg-6 about-repo">
-          <h3>Speed Stars</h3>
-          <p>A goofy but difficult to master foot racing game available on Steam and the Apple app store. This was my first full project I made with Unity, where I went full in on the game development process from design to implementation to art to publishing.</p>
-          <p style = "margin-bottom: 0px;"><a href="https://apps.apple.com/us/app/speed-stars/id1573039936" class="link">App store link</a></p>
-          <p><a href="https://store.steampowered.com/app/1482700/Speed_Stars/" class="link">Steam link</a></p>
-
-          <div class="tech-items">
-            <i class="devicon-csharp-plain-wordmark colored animated"></i>
-          </div>
-        </div>
-        
-        <div class="col-lg-6">
-          <img src="https://i.imgur.com/ePUOki7.png" alt="" class="img-fluid center-block">
-        </div>
-
-      </div>
-
-
-        <div class="row repo" style="margin-bottom:120px">
-          
-          <div class="col-lg-6 about-repo">
-            <h3>Grocceries Grocery Delivery Service</h3>
-            <p>This is the result of my final project for Software Engineering, a grocery delivery web application created using Django web development framework. I learned to work full stack, from communicating with databases to creating dynamic interfaces with HTML/CSS and JavaScript.</p>
-            <p style = "margin-bottom: 0px;"><a href="http://grocceries.shop/" class="link">Website</a></p>
-            <p><a href="https://github.com/lukedoukakis/grocceries" class="link">Code</a></p>
-
-            <div class="tech-items">
-              <i class="devicon-django-plain-wordmark colored animated"></i>
-              <i class="devicon-postgresql-plain-wordmark colored animated"></i>
-              <i class="devicon-javascript-plain-wordmark colored animated"></i>
-              <i class="devicon-python-plain-wordmark colored animated"></i>
-            </div>
-          </div>
-          
-          <div class="col-lg-6">
-            <img src="https://i.imgur.com/WmkGefv.png" alt="" class="img-fluid center-block">
-          </div>
-
-        </div>
-
-        <div class="row repo" style="margin-bottom:120px">
-          
-          <div class="col-lg-6 about-repo">
-            <h3>Orbis Terrarum</h3>
-            <p>A procedurally generated low-poly world I created with Unity, that combines several noise maps and uses custom shaders to create rolling landscapes and biomes. I took on this side project as a programming challenge as well as to learn more advanced graphical techniques.</p>
-            <p style = "margin-bottom: 0px;"><a href="https://www.youtube.com/watch?v=K0nGPhG4Lio" class="link">Video</a></p>
-            <p><a href="https://github.com/lukedoukakis/orbis-terrarum/tree/main/Humans/Assets/Scripts" class="link">Code</a></p>
-
-            <div class="tech-items">
-              <i class="devicon-csharp-plain-wordmark colored animated"></i>
-            </div>
-          </div>
-          
-          <div class="col-lg-6">
-            <img src="https://i.imgur.com/7R63vTt.png" alt="" class="img-fluid center-block">
-          </div>
-
-        </div>
-
-        <div class="row repo" style="margin-bottom:120px">
-          
-          <div class="col-lg-6 about-repo">
-            <h3>Contra (Clone)</h3>
-            <p>A clone of the classic 1987 arcade game Contra from Konami, with an additional variant mode, as a final group project for Game Development (Fall 2020).
-
-Created by by Luke Doukakis, Ethan Bangar-Martinez, Justin Robinson, Joanna Cao, and James Gaier.</p>
-            <p><a href="https://github.com/lukedoukakis/contra-platformer/tree/main/Assets/Scripts" class="link">Code</a></p>
-
-            <div class="tech-items">
-              <i class="devicon-csharp-plain-wordmark colored animated"></i>
-            </div>
-          </div>
-          
-          <div class="col-lg-6">
-            <img src="https://raw.githubusercontent.com/lukedoukakis/contra-platformer/main/Assets/Images/_ontra_logo.png" alt="" class="img-fluid center-block">
-          </div>
-
-        </div>
-
-    </section>
-
-
-    
     <!-- Technical Experience -->
 
 
-    <div class="row row-footer">
-      <div class="col footer-col">
-        <hr>
-        <p><i class="far fa-copyright"></i> Luke Doukakis</p>
-        <p>
-          <span class="location muted">Santa Clarita, California</span>
-        </p>
-        <div class="socialLinks">
-            <a href="https://www.linkedin.com/in/lukedoukakis/" target="_blank">
-              <i class="fab fa-linkedin linkedin animated"></i>
-            </a>
-        </div>
-      </div>
-    </div>
-
   </div> <!-- end container -->
 
-    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
 
-  </body>
+</body>
+
 </html>
