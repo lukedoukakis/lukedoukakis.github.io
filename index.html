@@ -26,6 +26,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Rakkas&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- Leave those next 4 lines if you care about users using IE8 -->
   <!--[if lt IE 9]>
@@ -92,6 +94,7 @@
       font-family: Arial, Helvetica, sans-serif;
       font-stretch: 50%;
       line-height: 150%;
+      font-weight: bolder;
       text-align: left;
     }
 
@@ -166,11 +169,11 @@
     }
 
     .sticky-header {
-      position: -webkit-sticky;
-      /* Safari */
-      position: sticky;
+      /* position: -webkit-sticky;
+      position: sticky; */
       top: 0;
       background-color: #ffffff;
+      opacity: 1;
       z-index: 2;
       display: flex;
       justify-content: center;
@@ -308,6 +311,13 @@
       flex-direction: column;
     }
 
+    .link {
+      color: #ffffff;
+      font-size: 32px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-stretch: 50%;
+    }
+
     @media (max-width: 991px) {
       .row.repo {
         flex-direction: column-reverse;
@@ -354,7 +364,7 @@
 
 
     function switchElement_header(elementId) {
-      const elements = ["about", "work"];
+      const elements = ["about", "projects", "work"];
       elements.forEach((item, index) => {
         var x = document.getElementById(item);
         if (item == elementId) {
@@ -440,6 +450,11 @@
             <h2>About</h2>
           </div>
         </button>
+        <button class="header-button" ; onclick="switchElement_header('projects')">
+          <div>
+            <h2>Projects</h2>
+          </div>
+        </button>
         <button class="header-button" ; onclick="switchElement_header('work')">
           <div>
             <h2>Work</h2>
@@ -451,27 +466,23 @@
   </div>
 
   <div class="container"></div>
-  <!-- Projects -->
-
-
-
   <div class="content" id="about" style="display: flex;">
-    <div class="row text-center row-header" style="display: flex; justify-content: center; width: 400px; padding-left: 20px; padding-right: 20px; padding-top: 40px; padding-bottom: 40px;">
+    <div class="row text-center row-header"
+      style="display: flex; justify-content: center; width: 400px; padding-left: 20px; padding-right: 20px; padding-top: 40px; padding-bottom: 40px;">
       <img
         src="https://media.licdn.com/dms/image/D5603AQGfPOMtULkG0w/profile-displayphoto-shrink_200_200/0/1704409752490?e=1712188800&v=beta&t=Kj6zrCXbgivz6AUv7yfcTrvpLlbfnBJbDqwVCn7HQ6k"
         alt="profile pic" class="img-fluid profile-pic center-block">
       <h6 style="margin-top: 30px;">
-        Luke Doukakis is a game developer with a diverse set of skills primarily focused in engineering and graphics
-        programming.
-        Well versed in Unity, Luke has well-practiced experience with C# scripting, shader authoring with HLSL and
-        Universal Render Pipeline, and UI development.<br><br>
-        He is also equipped with skills in 3D modeling and animation using Blender and Unity's Mecanim animation system.
+        Luke Doukakis is a software engineer engineer and digital experience developer primarily focused in games and
+        graphics programming.
+        Specializing in Unity, he is well practiced with C# scripting, shader authoring with HLSL and
+        Universal Render Pipeline, UI development, and character animation with Mecanim system.
       </h6>
     </div>
   </div>
 
 
-  <div class="content" id="work" style="display: none; justify-content: center;">
+  <div class="content" id="projects" style="display: none; justify-content: center;">
 
     <div id="speed_stars_video" style = "background-color: #ffffff;">
       <video autoplay muted loop playsinline style="pointer-events: none; z-index: -1; position: fixed;
@@ -497,29 +508,36 @@
       </video>
     </div>
 
-    <div style="justify-content: center; width: 800px; z-index: 1; background-color: rgba(0,0,0,0); padding-left: 50px; padding-right: 50px; padding-bottom: 200px;">
-      <div class="row repo" id="speed_stars_content" style="margin-top:75px; display: flex; justify-content: center; margin-bottom: 50px;">
+    <div style="justify-content: center; width: 800px; min-width: 800px; z-index: 1; background-color: rgba(0,0,0,0); padding-left: 50px; padding-right: 50px; padding-bottom: 200px; margin-left: 0px; margin-right: 0px;">
+      <div class="row repo" id="speed_stars_content" style="margin-top:75px; display: flex; justify-content: center; margin-bottom: 100px; margin-left: 0px; margin-right: 0px;">
         <div class="col-lg-6 about-repo" style="display: flex; justify-content: center;">
           <h8 style="margin-bottom: 25px;">Speed Stars</h8>
           <h7>A free-to-play mobile track and field game available on the iOS App Store and
             Google Play.
           </h7>
+          <div class="row repo" id="speed_stars_content" style="display: flex; justify-content: left; text-align: center; margin: 0px;">
+            <p style = "margin: 0px;"> <i style="font-size:32px; color:#ffffff; padding-right: 10px;" class="fa">&#xf179;</i><a href="https://apps.apple.com/us/app/speed-stars/id1573039936" class="link">iOS</a></p>
+          </div>
+          <div class="row repo" id="speed_stars_content" style="display: flex; justify-content: left; text-align: center; margin: 0px;">
+            <p style = "margin: 0px;"> <i style="font-size:32px; color:#ffffff; padding-right: 10px;" class='fab'>&#xf3ab;</i><a href="https://apps.apple.com/us/app/speed-stars/id1573039936" class="link">Google Play</a></p>
+          </div>
+          
         </div>
 
         <div class="col-lg-6">
           <img src="https://i.imgur.com/LAH38pf.png" alt="" class="img-fluid center-block">
         </div>
 
-        <h7 style = "margin-top: 30px;">
-          The game aims to engage players through sheer enjoyment of gameplay and feeling of progression,
-          epitomizing easy-to-learn and hard-to-master.
-          The simple aesthetic and straight-forward controls invite you in - intricate gameplay mechanics and
-          competition through asynchronous multiplayer keep you feeling challenged to
-          improve and want more!
+        <h7 style="margin-top: 30px;">
+          Epitomizing the concept of easy-to-learn and hard-to-master, Speed Stars engages through enjoyment of gameplay,
+          learning, and feeling of progression.
+          Colorful aesthetics and simple straight-forward controls invite you in. Intricate gameplay mechanics, a high skill
+          ceiling and
+          fostering competitiveness through asynchronous multiplayer and leaderboards keep you feeling challenged to
+          want more!
         </h7>
 
-        <p style="margin-bottom: 0px;"><a href="https://apps.apple.com/us/app/speed-stars/id1573039936" class="link">App
-            store link</a></p>
+        
         <!-- <p><a href="https://store.steampowered.com/app/1482700/Speed_Stars/" class="link">Steam link</a></p> -->
 
         <!-- <div class="tech-items">
@@ -539,7 +557,7 @@
           <p style="margin-bottom: 0px;"><a href="https://www.youtube.com/watch?v=K0nGPhG4Lio" class="link">Video</a>
           </p>
           <p><a href="https://github.com/lukedoukakis/orbis-terrarum/tree/main/Humans/Assets/Scripts"
-              class="link">Code</a></p>
+              class="link" style="margin-top: 20px;">Code</a></p>
 
           <!-- <div class="tech-items">
             <i class="devicon-csharp-plain-wordmark colored animated"></i>
@@ -561,6 +579,9 @@
 
 
   </div> <!-- end container -->
+
+
+  <div class="content" id="projects" style="display: none; justify-content: center;"></div>
 
   <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
